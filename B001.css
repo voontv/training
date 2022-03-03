@@ -1,0 +1,68 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.required{
+    color: red;
+}
+
+.row-heading{
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.row{
+    margin-bottom: 12px;
+}
+
+.col-half{
+    float: left;
+    width: 48%;
+}
+
+.terms{
+    width: 600px;
+    margin: auto;
+}
+
+input, label{
+    display: block;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+}
+
+.list-term{
+    overflow-y: scroll;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #ccc; 
+    border-radius: 5px;
+}
+
+.list-term p{
+    padding: 10px;
+    text-align: justify;
+}
+
+#signature{
+    width: 60%;
+    height: 250px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+button{
+    padding: 4px;
+}
