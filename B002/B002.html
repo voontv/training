@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising Estimate</title>
+    <link rel="stylesheet" href="B002.css">
+</head>
+<body>
+    <div class="advertisement">
+        <form action="">
+            <h3>Advertising Estimate</h3>
+            
+            <!-- Filling -->
+            <div class="row">
+                <label for="name" class="required">Name / Company name</label>
+                <input type="text" id="name" name="name" required class="fullWidth">
+            </div>
+                
+            <div class="row">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required class="fullWidth">
+            </div>
+
+            <div class="row">
+                <label for="dateStart" class="required">Ad Start Date</label>
+                <input type="date" id="dateStart" name="dateStart" required class="halfWidth">
+            </div>
+
+            <div class="row">
+                <label for="dateEnd" class="required">Ad End Date</label>
+                <input type="date" id="dateEnd" name="dateEnd" required class="halfWidth">
+            </div>
+
+
+            <!-- Choosing -->
+            <div class="row">
+                <p>Advertising Size (pixels)</p>
+                <ul>
+                    <li>
+                        <input type="radio" name="adOpt" id="adOpt1" value="Option1">
+                        <label for="adOpt1">Option1</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="adOpt"id="adOpt2" value="Option2">
+                        <label for="adOpt2">Option2</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="adOpt" id="adOpt3" value="Option3">
+                        <label for="adOpt3">Option3</label>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="row">
+                <p>Which sites would you like to advertise on?</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="siteOpt1" id="siteOpt1" value="Option1">
+                        <label for="siteOpt1">Option1</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="siteOpt2" id="siteOpt2" value="Option2">
+                        <label for="siteOpt2">Option2</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="siteOpt3" id="siteOpt3" value="Option3">
+                        <label for="siteOpt3">Option3</label>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Filling -->
+            <div class="row">
+                <label for="Website" class="required">Website to be advertised</label>
+                <input type="url" id="Website" name="Website" required class="fullWidth">
+            </div>
+
+
+            <!-- Comment -->
+            <div class="row">
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment" cols="30" rows="10" class="fullWidth"></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
