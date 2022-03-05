@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Tracker</title>
+    <link rel="stylesheet" href="B003.css">
+</head>
+<body>
+    <div class="bug-tracker">
+        <form action="">
+            <h3>Bug Tracker</h3>
+            <h4>Report a new bug.</h4>
+
+
+            <!-- Filling -->
+            <div class="row fullWidth">
+                <label for="bugTitle" class="required">Bug Title</label>
+                <input type="text" id="bugTitle" name="bugTitle" required>
+            </div>
+
+            <div class="row">
+                <label for="issueDes" class="required">Issue Description</label>
+                <textarea name="issueDes" id="issueDes" class="issue fullWidth" required></textarea>
+            </div>
+
+
+            <!-- Choosing -->
+            <div class="row">
+                <label for="OS" class="required">Operating System</label>
+                <select name="OS" id="OS" class="halfWidth" required>
+                    <option value="Microsoft Windows 7">Microsoft Windows 7</option>
+                    <option value="Microsoft Windows 8">Microsoft Windows 8</option>
+                    <option value="Microsoft Windows 8.1">Microsoft Windows 8.1</option>
+                    <option value="Microsoft Windows 10">Microsoft Windows 10</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="browser" class="required">Browser</label>
+                <select name="browser" id="browser" class="halfWidth" required>
+                    <option value="Google Chrome">Google Chrome</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Safari">Safari</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="assign" class="required">Assigned to</label>
+                <select name="assign" id="assign" class="fullWidth" required>
+                    <option value="QA tester 1">QA tester 1</option>
+                    <option value="QA tester 2">QA tester 2</option>
+                    <option value="QA tester 3">QA tester 3</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="priority" class="required">Priority</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="priority" id="priority1" value="Low" class="sameLine" required>
+                        <label for="priority1" class="sameLine">Low</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="priority" id="priority2" value="Medium" class="sameLine" required>
+                        <label for="priority2" class="sameLine">Medium</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="priority" id="priority3" value="High" class="sameLine" required>
+                        <label for="priority3" class="sameLine">High</label>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Upload -->
+            <div class="row">
+                <label for="screenshot1">Screenshot 1</label>
+                <input type="file" id="screenshot1" name="screenshot1" class="upFile fullWidth">
+            </div>
+
+            <div class="row">
+                <label for="screenshot2">Screenshot 2</label>
+                <input type="file" id="screenshot2" name="screenshot2" class="upFile fullWidth">
+            </div>
+
+            <!-- Choosing -->
+            <div class="row">
+                <label for="status" class="required">Status</label>
+                <select name="status" id="status" class="halfWidth" required>
+                    <option value="In Queue">In Queue</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
